@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "productName": "Pen123",
+      "category": "pen",
+      "rate": "good",
+      "price": 14,
+      "comment": "New Pen",
+      "date": "2022-10-13T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Pencil",
+      "category": "pencil",
+      "rate": "good",
+      "price": 1,
+      "comment": "ETstst",
+      "date": "2022-10-13T18:30:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <div style="margin-top: 10px; width: 50%; margin-left: 50px;">
+        <form [formGroup]="ruleForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Rule Name</mat-label>
+                <input formControlName="rule_name" matInput placeholder="Rule name">
+            </mat-form-field>
+
+            <mat-radio-group formControlName="rule_status"  aria-label="Select an option">
+                <mat-radio-button value="Active">Active</mat-radio-button>
+                <mat-radio-button value="In Active">In Active</mat-radio-button>
+            </mat-radio-group>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label>
+                <textarea formControlName="rule_description" matInput placeholder="Rule Description"></textarea>
+            </mat-form-field>
+        </form>
+    </div>
+</div>
+<div mat-dialog-action [align]="'center'">
+    <button mat-raised-button color="warn" [routerLink]="'/rules'">Cancel</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addRule()">Save</button>
+</div>
